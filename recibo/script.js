@@ -30,7 +30,7 @@ const agregarCarrito = () => {
 			mostrarCarrito(arrayProductos);
 			mostrarTotal(arrayProductos);
 			form.reset();
-		} else if (precio.value < 0) {
+		} else if (precio.value <= 0) {
 			error.style.display = "block";
 			error.textContent = "El Precio debe ser mayor a 0";
 			setTimeout(() => {
